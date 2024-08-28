@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interactive Boxes</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="background">
+			<p class="text">YAY! It's BOGO</p>
+			<div class="box" id="box1" onclick="toggleBox('box1')">
+				<div class="boxheader" id="inside1">
+					<div>
+						<p>
+							30% <br />
+							Off
+						</p>
+					</div>
+					<div class="child-box-header">
+						<div>
+							<input type="radio" id="radio1" name="toggle" />
+						</div>
+						<div class="box-grid">
+							<p class="box-text-simple">Buy 1 Get 2</p>
+							<p class="box-text">$18.00 USD</p>
+						</div>
+					</div>
+				</div>
+				<div class="box-content">
+					<div class="boxheaderopen">
+						<div>
+							<input type="radio" id="radio1" name="toggle" />
+							<div class="child-box-header-open">
+								<p class="box-text-simple">
+									Buy 1 Get 2 <span class="box-text-span"> 30% Off</span>
+								</p>
+								<p class="box-text">
+									$18.00 USD
+									<span class="span-cancelled"><del>$10.00 USD</del></span>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div>
+							<p class="text-style">Size:</p>
+							<div class="box-grid">
+								<div class="box-felx">
+									<span class="inside-span">#1</span>
+									<select>
+										<option>S</option>
+										<option>L</option>
+										<option>M</option>
+									</select>
+								</div>
+								<div class="box-felx">
+									<span class="inside-span">#2</span>
+									<select>
+										<option>S</option>
+										<option>L</option>
+										<option>M</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div>
+							<p class="text-style">Color:</p>
+							<div class="box-grid">
+								<div>
+									<select>
+										<option>Red</option>
+										<option>Green</option>
+										<option>Blue</option>
+									</select>
+								</div>
+								<div>
+									<select>
+										<option>Red</option>
+										<option>Green</option>
+										<option>Blue</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="box" id="box2" onclick="toggleBox('box2')">
+				<div class="boxheader" id="inside1">
+					<div>
+						<p>
+							30% <br />
+							Off
+						</p>
+					</div>
+					<div class="child-box-header-main">
+						<div class="child-box-header">
+							<input type="radio" id="radio2" name="toggle" />
+							<div class="box-grid">
+								<p class="box-text-simple">Buy 2 Get 4</p>
+								<p class="box-text">$24.00 USD</p>
+							</div>
+						</div>
+						<div>
+							<p class="box-text-simple">Most popular</p>
+						</div>
+					</div>
+				</div>
+				<div class="box-content">
+					<div class="boxheaderopen">
+						<div>
+							<input type="radio" id="radio2" name="toggle" />
+							<div class="child-box-header-open">
+								<p class="box-text-simple">
+									Buy 2 Get 4 <span class="box-text-span"> 30% Off</span>
+								</p>
+								<p class="box-text">
+									$24.00 USD
+									<span class="span-cancelled"><del>$10.00 USD</del></span>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div>
+							<p class="text-style">Size:</p>
+							<div class="box-grid">
+								<div class="box-felx">
+									<span class="inside-span">#1</span>
+									<select>
+										<option>S</option>
+										<option>L</option>
+										<option>M</option>
+									</select>
+								</div>
+								<div class="box-felx">
+									<span class="inside-span">#2</span>
+									<select>
+										<option>S</option>
+										<option>L</option>
+										<option>M</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div>
+							<p class="text-style">Color:</p>
+							<div class="box-grid">
+								<div>
+									<select>
+										<option>Red</option>
+										<option>Green</option>
+										<option>Blue</option>
+									</select>
+								</div>
+								<div>
+									<select>
+										<option>Red</option>
+										<option>Green</option>
+										<option>Blue</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="box" id="box3" onclick="toggleBox('box3')">
+				<div class="boxheader" id="inside1">
+					<div>
+						<p>
+							10% <br />
+							Off
+						</p>
+					</div>
+					<div class="child-box-header">
+						<input type="radio" id="radio3" name="toggle" />
+						<div class="box-grid">
+							<p class="box-text-simple">Buy 3 Get 6</p>
+							<p class="box-text">$36.00 USD</p>
+						</div>
+					</div>
+				</div>
+				<div class="box-content">
+					<div class="boxheaderopen">
+						<div>
+							<input type="radio" id="radio3" name="toggle" />
+							<div class="child-box-header-open">
+								<p class="box-text-simple">
+									Buy 3 Get 6 <span class="box-text-span"> 10% Off</span>
+								</p>
+								<p class="box-text">
+									$36.00 USD
+									<span class="span-cancelled"><del>$10.00 USD</del></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<p class="text-style">Size:</p>
+							<div class="box-grid">
+								<div class="box-felx">
+									<span class="inside-span">#1</span>
+									<select>
+										<option>S</option>
+										<option>L</option>
+										<option>M</option>
+									</select>
+								</div>
+								<div class="box-felx">
+									<span class="inside-span">#2</span>
+									<select>
+										<option>S</option>
+										<option>L</option>
+										<option>M</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div>
+							<p class="text-style">Color:</p>
+							<div class="box-grid">
+								<div>
+									<select>
+										<option>Red</option>
+										<option>Green</option>
+										<option>Blue</option>
+									</select>
+								</div>
+								<div>
+									<select>
+										<option>Red</option>
+										<option>Green</option>
+										<option>Blue</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-container">
+				<div class="grid-item-1">
+					<p>Free Delivery</p>
+				</div>
+				<div class="grid-item-2">
+					<p>Total: $18.00 USD</p>
+				</div>
+			</div>
+			<div class="boxbutton">
+				<button>+ Add to Cart</button>
+			</div>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>
